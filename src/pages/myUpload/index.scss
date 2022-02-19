@@ -1,0 +1,45 @@
+@import '../../app.scss';
+.upload-page {
+  .list-box {
+    padding: 0 32px;
+  }
+  .list-item {
+   @include flexBox();
+   border-bottom: solid 1px #cccccc;
+   padding: 40px 0 32px;
+   .item-img {
+     width: 200px;
+     height: 200px;
+     border: solid 1px rgba(0,0,0,.04);
+     border-radius: 4px;
+   }
+   .item-right {
+     flex: 1;
+     padding-left: 24px;
+     height: 200px;
+     @include flexBox($direction: column, $justify: space-between, $align: flex-start);
+   }
+   .item-title {
+    @include flexBox($align: flex-start);
+    .title-con {
+      font-size: 28px;
+      color: #262626;
+      flex: 1;
+    }
+    .title-label {
+      width: 120px;
+      font-size: 20px;
+      color: #417EF3;
+      text-align: right;
+    }
+   }
+   .item-time {
+     font-size: 24px;
+     color: #8e8e8e;
+   }
+   .item-btn {
+     width: 100%;
+    @include flexBox($justify: flex-end);
+   }
+  }
+}

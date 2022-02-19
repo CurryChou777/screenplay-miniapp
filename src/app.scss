@@ -1,0 +1,51 @@
+@mixin flexBox ($direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  overflow: hidden;
+}
+$fontColorMain: #262626;
+$fontColorDesc: #aaa;
+$mainBlue: #417EF3;
+.page-warp {
+  height: 100vh;
+  box-sizing: border-box;
+}
+.tabbar-page {
+  padding-bottom: 140px;
+}
+.scroll-box {
+  height: 100%;
+}
+.textHidden {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.textEllipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.btn {
+  @include flexBox();
+  min-width: 128px;
+  height: 48px;
+  border: solid 1px #e0e0e0;
+  border-radius: 4px;
+  margin-right: 16px;
+  font-size: 24px;
+  color: #808080;
+  padding: 0 16px;
+  box-sizing: border-box;
+  &.light {
+    background: $mainBlue;
+    border-color: $mainBlue;
+    color: #fff;
+  }
+}
+

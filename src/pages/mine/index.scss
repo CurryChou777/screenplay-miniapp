@@ -1,0 +1,40 @@
+@import '../../app.scss';
+.mine-page {
+  .head-box {
+    box-sizing: border-box;
+    padding: 32px;
+    overflow: hidden;
+    @include flexBox($justify: flex-start);
+    .head-name {
+      font-size: 32px;
+      font-weight: 600;
+      padding-left: 24px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+  }
+  .list-box {
+    padding: 32px;
+    .list-title {
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    .list-item {
+      @include flexBox($justify: space-between);
+      height: 90px;
+      border-bottom: solid 1px #eee;
+      .item-left {
+        @include flexBox($justify: flex-start);
+      }
+      .item-icon {
+        width: 60px;
+        height: 60px;
+      }
+      .item-name {
+        font-size: 28px;
+        padding-left: 20px;
+      }
+    }
+  }
+}

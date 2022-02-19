@@ -1,0 +1,24 @@
+.examine-page {
+  .examine-p1 {
+    font-size: 40px;
+    padding: 30px 32px 0;
+  }
+  .examine-p2 {
+    font-size: 28px;
+    padding: 30px 32px 0;
+  }
+  .examine-box {
+    text-align: center;
+    padding-top: 50px;
+    .img {
+      width: 250px;
+      height: 250px;
+    }
+    .p1 {
+      font-size: 28px;
+    }
+    .p2 {
+      font-size: 48px;
+    }
+  }
+}

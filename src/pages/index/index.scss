@@ -1,0 +1,62 @@
+@import '../../app.scss';
+.index-page {
+  @include flexBox($direction: column);
+  .banner-box {
+    width: 100%;
+    height: 240px;
+    .banner-image {
+      width: 100%;
+      height: 240px;
+    }
+  }
+  .home-tab-box {
+    box-sizing: border-box;
+    padding: 32px 32px 0;
+    width: 100%;
+    @include flexBox($justify: flex-start);
+    .home-tab-item {
+      font-size: 40px;
+      margin-right: 24px;
+      font-weight: bold;
+      color: $fontColorDesc;
+      &.on {
+        color: $fontColorMain;
+      }
+    }
+  }
+  .home-list {
+    box-sizing: border-box;
+    padding: 0 32px;
+    flex: 1;
+    overflow: hidden;
+    .list-item {
+      @include flexBox();
+      padding: 24px 0;
+      border-bottom: solid 1px rgba(0,0,0,.04);
+      .item-image {
+        width: 200px;
+        height: 128px;
+        border: solid 1px #D8D8D8;
+        border-radius: 4px;
+      }
+      .item-info {
+        @include flexBox($direction: column, $justify: space-between);
+        flex: 1;
+        padding-left: 24px;
+        box-sizing: border-box;
+        height: 128px;
+        .info-title {
+          font-size: 28px;
+          line-height: 40px;
+          color: $fontColorMain;
+        }
+        .info-desc {
+          width: 100%;
+          @include flexBox($justify: space-between);
+          color: $fontColorDesc;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

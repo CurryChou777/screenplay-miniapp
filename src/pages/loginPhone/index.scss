@@ -1,0 +1,62 @@
+@import '../../app.scss';
+.login-page {
+  padding: 0 32px;
+  .login-title {
+    padding: 100px 0 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: $fontColorMain;
+  }
+  .input-label {
+    font-size: 28px;
+    padding: 32px 0 16px;
+    color: $fontColorMain;
+    text-align: left;
+  }
+  .input-box {
+    @include flexBox();
+    width: 100%;
+    height: 96px;
+    background: rgba(0,0,0,.04);
+    .input-el, .weui-input {
+      flex: 1;
+      height: 100%;
+      font-size: 28px;
+    }
+    .weui-input {
+      box-sizing: border-box;
+      padding: 0 24px;
+    }
+    .input-btn {
+      width: 216px;
+      height: 96px;
+      line-height: 96px;
+      font-size: 24px;
+      text-align: center;
+      background: $mainBlue;
+      color: #fff;
+      &.dis {
+        background: #ccc;
+      }
+    }
+  }
+  .login-btn {
+    width: 270px;
+    height: 96px;
+    margin: 66px auto 0;
+  }
+  .login-desc {
+    @include flexBox($justify: flex-start);
+    .desc-text {
+      font-size: 24px;
+      color: $fontColorMain;
+      padding-left: 10px;
+      line-height: 46px;
+      padding-top: 10px;
+      .desx-a {
+        color: $mainBlue;
+        font-weight: 500;
+      }
+    }
+  }
+}
