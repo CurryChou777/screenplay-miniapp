@@ -71,7 +71,7 @@ const config = {
       host: 'localhost',
       port: 10086,
       proxy: {
-        '/decoration': {  // rest服务的path
+        '/screenplay': {  // rest服务的path
           target: 'https://www.reminisce.cn',  // 服务端地址
           changeOrigin: true
         }

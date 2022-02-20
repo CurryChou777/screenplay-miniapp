@@ -6,7 +6,7 @@
     >
       <AtAvatar
         circle
-        :image="userInfo.avatarUrl"
+        :image="userInfo.avatarUrl || defaultHeader"
       />
       <view class="head-name">
         {{ userInfo.nickName || userInfo.account || '--' }}

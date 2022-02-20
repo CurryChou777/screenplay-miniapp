@@ -1,8 +1,8 @@
 const getBaseUrl = (url) => {
-  // let BASE_URL = 'https://www.reminisce.cn/decoration';
-  let BASE_URL = '/decoration';
+  // let BASE_URL = 'https://www.reminisce.cn/screenplay';
+  let BASE_URL = '/screenplay';
   // prd
-  // let BASE_URL = 'https://css.jmylm.cn/decoration';
+  // let BASE_URL = 'https://css.jmylm.cn/screenplay';
   // if (process.env.NODE_ENV === 'development') {
   //   //开发环境 - 根据请求不同返回不同的BASE_URL
   //   if (url.includes('/api/')) {
