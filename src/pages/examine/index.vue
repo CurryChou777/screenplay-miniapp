@@ -10,13 +10,13 @@
       <image
         class="img"
         mode="aspectFill"
-        src="../../image/ic_order_mine@2x.png"
+        src="../../image/icon-pc.png"
       />
       <view class="p1">
         用电脑浏览器打开
       </view>
       <view class="p2">
-        www.jubenshenhe.com
+        {{ webUrl }}
       </view>
     </view>
     <AtTabBar
@@ -37,13 +37,15 @@ import "taro-ui-vue/dist/style/components/tab-bar.scss"
 import "taro-ui-vue/dist/style/components/badge.scss"
 import './index.scss'
 import { tabbarList, tabbarHandle } from '../../util'
+const WEB_URL = window.CONFIG.WEB_URL
 export default {
   components: {
     AtTabBar
   },
   data () {
     return {
-      tabList: tabbarList
+      tabList: tabbarList,
+      webUrl: WEB_URL
     }
   },
   methods: {

@@ -37,7 +37,7 @@
           <image
             class="item-icon"
             mode="aspectFill"
-            src="../../image/nav1.png"
+            src="../../image/mine-icon1.png"
           />
           <view class="item-name">
             我上传的
@@ -49,15 +49,6 @@
           color="#cccccc"
         />
       </view>
-      <!-- 会默认触发onClick事件 -->
-      <!-- <AtList :has-border="false">
-        <AtListItem
-          title="我上传的"
-          arrow="right"
-          thumb="../../image/nav1.png"
-          :on-click="goPage('/pages/myUpload/index')"
-        />
-      </AtList> -->
     </view>
     <AtTabBar
       fixed

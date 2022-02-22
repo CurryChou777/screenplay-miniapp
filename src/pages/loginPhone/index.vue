@@ -147,9 +147,10 @@ export default {
             key: "token",
             data: resBody.token
           })
-          Taro.navigateBack({
-            delta: 1
-          })
+          // Taro.navigateBack({
+          //   delta: 1
+          // })
+          Taro.redirectTo({url: "/pages/mine/index"})
           // if (!resBody.nickName && !resBody.avatarUrl) {
           //   // 昵称/头像为空，获取微信数据
           //   store.dispatch('getWxInfo')

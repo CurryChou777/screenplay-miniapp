@@ -65,3 +65,11 @@ export const getUserScreenplayListAPI = (postData) => {
 export const getScreenplayInfoAPI = (postData) => {
   return HTTPREQUEST.post('/api/screenplay/getScreenplayInfo', postData)
 }
+// 剧本删除
+export const deleteScreenplayAPI = (postData) => {
+  return HTTPREQUEST.post('/api/screenplay/deleteScreenplay', postData)
+}
+// 取消审核
+export const cancelAuditAPI = (postData) => {
+  return HTTPREQUEST.post('/api/screenplay/withdrawScreenplay', postData)
+}

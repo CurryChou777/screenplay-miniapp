@@ -2,20 +2,20 @@ import Taro from '@tarojs/taro'
 export const tabbarList = [
   {
     title: '首页',
-    image: 'https://static.css.jmylm.cn/img/icon1.png',
-    selectedImage: 'https://static.css.jmylm.cn/img/icon1-on.png',
+    image: require("./image/icon1.png"),
+    selectedImage: require("./image/icon1-on.png"),
     src: '/pages/index/index'
   },
   {
     title: '审核',
-    image: 'https://static.css.jmylm.cn/img/icon2.png',
-    selectedImage: 'https://static.css.jmylm.cn/img/icon2-on.png',
+    image: require("./image/icon2.png"),
+    selectedImage: require("./image/icon2-on.png"),
     src: '/pages/examine/index'
   },
   {
     title: '我的',
-    image: 'https://static.css.jmylm.cn/img/icon3.png',
-    selectedImage: 'https://static.css.jmylm.cn/img/icon3-on.png',
+    image: require("./image/icon3.png"),
+    selectedImage: require("./image/icon3-on.png"),
     src: '/pages/mine/index'
   }
 ]

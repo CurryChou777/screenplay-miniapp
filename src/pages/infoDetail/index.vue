@@ -4,14 +4,17 @@
       <image
         class="banner-image"
         mode="aspectFill"
-        src="../../image/login-head.png"
+        :src="infoObj.coverImg"
       />
     </view>
     <view class="info-title">
-      《黑暗者》获TGA玩家之声奖，多款剧本杀游戏将在颁奖典礼公布新消息
+      {{ infoObj.title }}
     </view>
     <view class="info-desc">
-      来源：中国传媒集团官网 2022-12-09 15:30:21
+      {{ infoObj.source }} {{ infoObj.updateTime }}
+    </view>
+    <view class="rich-box">
+      <rich-text :nodes="richHtml" />
     </view>
   </view>
 </template>
@@ -25,6 +28,7 @@ export default {
   data () {
     return {
       infoObj: {},
+      richHtml: '',
       detailId: 0,
       titleName: ''
     }
@@ -44,7 +48,21 @@ export default {
       }
       getInformationInfoAPI(params).then(res => {
         this.infoObj = res.body || {}
+        this.richHtml = this.formatImg(this.infoObj.content)
       })
+    },
+    formatImg(html){
+      return (html || '')
+        .replace(/<p([\s\w"=\/\.:;]+)((?:(style="[^"]+")))/ig, '<p')
+        .replace(/<p([\s\w"=\/\.:;]+)((?:(class="[^"]+")))/ig, '<p')
+        .replace(/<p>/ig, '<p class="fs-class">')
+        .replace(/<span([\s\w"=\/\.:;]+)((?:(style="[^"]+")))/ig, '<span')
+        .replace(/<span([\s\w"=\/\.:;]+)((?:(class="[^"]+")))/ig, '<span')
+        .replace(/<span>/ig, '<span class="fs-class">')
+        .replace(/<li([\s\w"=\/\.:;]+)((?:(style="[^"]+")))/ig, '<li')
+        .replace(/<li([\s\w"=\/\.:;]+)((?:(class="[^"]+")))/ig, '<li')
+        .replace(/<li>/ig, '<li class="fs-class">')
+        .replace(/\<img/gi, '<img style="max-width:100%;height:auto"')
     },
   }
 }

@@ -35,34 +35,15 @@
           <image
             class="item-image"
             mode="aspectFill"
-            src="../../image/header.png"
+            :src="item.coverImg"
           />
           <view class="item-info">
             <view class="info-title textEllipsis2">
-              《黑暗者》获TGA玩家之声奖，多款剧本杀游戏将在颁奖ddddd典礼公布新消息
+              {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>来源：中国传媒集团官网</text>
-              <text>2022-12-09</text>
-            </view>
-          </view>
-        </view>
-        <view
-          class="list-item"
-          @tap="GoDetail({id: 1})"
-        >
-          <image
-            class="item-image"
-            mode="aspectFill"
-            src="../../image/header.png"
-          />
-          <view class="item-info">
-            <view class="info-title textEllipsis2">
-              《黑暗者》获TGA玩家之声奖，多款剧本杀游戏将在颁奖ddddd典礼公布新消息
-            </view>
-            <view class="info-desc">
-              <text>来源：中国传媒集团官网</text>
-              <text>2022-12-09</text>
+              <text>{{ item.source }}</text>
+              <text>{{ (item.addTime || '').split(" ")[0] }}</text>
             </view>
           </view>
         </view>
@@ -83,15 +64,15 @@
           <image
             class="item-image"
             mode="aspectFill"
-            src="../../image/header.png"
+            :src="item.coverImg"
           />
           <view class="item-info">
             <view class="info-title textEllipsis2">
-              《黑暗者》获TGA玩家之声奖，多款剧本杀游戏将在颁奖ddddd典礼公布新消息
+              {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>来源：中国传媒集团官网</text>
-              <text>2022-12-09</text>
+              <text>{{ item.source }}</text>
+              <text>{{ (item.addTime || '').split(" ")[0] }}</text>
             </view>
           </view>
         </view>

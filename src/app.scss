@@ -30,6 +30,7 @@ $mainBlue: #417EF3;
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
+  word-break: break-word;
 }
 .btn {
   @include flexBox();
@@ -48,4 +49,12 @@ $mainBlue: #417EF3;
     color: #fff;
   }
 }
+.rich-box {
+  .fs-class {
+    font-size: 32px;
+  }
+}
 
+ul, ol {
+  margin-left: 60px;
+}

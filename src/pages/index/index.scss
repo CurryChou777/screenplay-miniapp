@@ -25,6 +25,7 @@
     }
   }
   .home-list {
+    width: 100%;
     box-sizing: border-box;
     padding: 0 32px;
     flex: 1;
@@ -46,9 +47,11 @@
         box-sizing: border-box;
         height: 128px;
         .info-title {
+          width: 100%;
           font-size: 28px;
           line-height: 40px;
           color: $fontColorMain;
+          text-align: left;
         }
         .info-desc {
           width: 100%;

@@ -6,6 +6,7 @@ module.exports = {
   },
   mini: {},
   h5: {
+    publicPath: '/',
     esnextModules: ['taro-ui']
   }
 }
