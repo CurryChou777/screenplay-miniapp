@@ -11,7 +11,8 @@
       {{ infoObj.title }}
     </view>
     <view class="info-desc">
-      {{ infoObj.source }} {{ infoObj.updateTime }}
+      <text class="desc-text">来源：{{ infoObj.source || '--' }}</text>
+      <text class="desc-text">{{ infoObj.updateTime }}</text>
     </view>
     <view class="rich-box">
       <rich-text :nodes="richHtml" />

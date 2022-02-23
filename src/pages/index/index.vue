@@ -42,7 +42,7 @@
               {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>{{ item.source }}</text>
+              <text>来源：{{ item.source || '--' }}</text>
               <text>{{ (item.addTime || '').split(" ")[0] }}</text>
             </view>
           </view>
@@ -71,7 +71,7 @@
               {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>{{ item.source }}</text>
+              <text>来源：{{ item.source || '--' }}</text>
               <text>{{ (item.addTime || '').split(" ")[0] }}</text>
             </view>
           </view>
