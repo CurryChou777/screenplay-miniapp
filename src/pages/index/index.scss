@@ -58,6 +58,11 @@
           @include flexBox($justify: space-between);
           color: $fontColorDesc;
           font-size: 20px;
+          .desc1 {
+            flex: 1;
+            overflow: hidden;
+            padding-right: 10px;
+          }
         }
       }
     }

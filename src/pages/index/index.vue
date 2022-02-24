@@ -42,8 +42,8 @@
               {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>来源：{{ item.source || '--' }}</text>
-              <text>{{ (item.addTime || '').split(" ")[0] }}</text>
+              <view class="desc1 textHidden">来源：{{ item.source || '--' }}</view>
+              <view>{{ (item.addTime || '').split(" ")[0] }}</view>
             </view>
           </view>
         </view>
@@ -71,8 +71,8 @@
               {{ item.title }}
             </view>
             <view class="info-desc">
-              <text>来源：{{ item.source || '--' }}</text>
-              <text>{{ (item.addTime || '').split(" ")[0] }}</text>
+              <view class="desc1 textHidden">来源：{{ item.source || '--' }}</view>
+              <view>{{ (item.addTime || '').split(" ")[0] }}</view>
             </view>
           </view>
         </view>
